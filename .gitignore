@@ -5,3 +5,5 @@ metrics.csv
 /figures/
 /data/
 neural_ode_airpassengers.pt
+
+.DS_Store
