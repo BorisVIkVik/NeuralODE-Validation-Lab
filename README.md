@@ -1,4 +1,4 @@
-# Лабораторная № 2Neural ODE на AirPassengers
+# Лабораторная № 2 Neural ODE для прогнозирования пассажиропотока
 
 ## Данные
 Классический ряд Box–Jenkins AirPassengers: месячный международный
@@ -7,6 +7,9 @@
 [CSV](https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/AirPassengers.csv).
 
 ## Архитектура
+
+![Схема модели](neural_ode_architecture.png)
+
 Схема: **24 наблюдения → log-нормализация → центрирование по последнему
 наблюдению → encoder 24→32→12 → ODE 12→32→12 → линейное чтение в 12 моментах → exp**.
 Последнее наблюдение служит опорным уровнем.
